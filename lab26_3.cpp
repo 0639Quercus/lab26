@@ -4,10 +4,10 @@
 using namespace std;
 
 int count(int data[], unsigned int size){
-	set<int> countSet;
-	for(unsigned int i = 0; i < size; i++){
+	set<int> countSet(data,data + size);
+	/*for(unsigned int i = 0; i < size; i++){
 		countSet.insert(data[i]);
-	}
+	}*/
 	return countSet.size();
 }
 
